@@ -5,9 +5,39 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background:white;
+ 
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.employe {
+
+
+	border:2px solid grey;
+	padding: 100px;
+
+	/*border:9px outset grey;*/
+}
+
+th{
+	border:3px solid black;
+}
+table{
+	border:2px solid black;
+	color:white;
+}
+#workinfo{
+	background:black;
+	padding:10px;
+	color:grey;
+}
+
+#aa:hover
+{
+	color:orange;
+
 }
