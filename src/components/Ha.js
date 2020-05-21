@@ -2,7 +2,7 @@ import React,{ Component } from 'react';
 import Timings from './Timings';
 
 import Employe from'./Employe';
-
+import Logo from './emp.png'
 class Ha extends Component {
 	state = {
 
@@ -60,7 +60,7 @@ class Ha extends Component {
 
 
 
-			<div style={contents}>
+			<div style={contents} id="l1">
 			<div  className="employe" style={comp}>
 			<p id="abc" className="alpha"> <u><b>EMPLOYEE NAMES</b></u></p>
 			<ol>
@@ -70,7 +70,7 @@ class Ha extends Component {
 			</div>
 
 			<div style={comp}> 
-			<div style={sticky}>
+			<div style={sticky} >
 
 			<p id="workinfo"><u><b>WORKING TIMING</b></u></p>
 			<table >
@@ -94,8 +94,12 @@ class Ha extends Component {
 			</tbody>
 			
 			</table>
+			<img id="image" src={Logo}></img>
+			
+			<p style={para}>{this.state.real_name}</p>
 			</div>
 			</div>
+
 			</div>
 			
 	
@@ -115,13 +119,21 @@ class Ha extends Component {
 }
 const contents={
 	display:'flex',
+	marginTop:'90px',
+	background:'#1EADE6',
+
+	borderColor:'#FFFFFF'
+
 	
 }
 const sticky={
 
 	  position: 'sticky',
       top: '0',
-      background:'grey'
+      background:'#076EE2',
+
+      opacity: '1',
+      borderRadius:'10%'
 }
 
  
@@ -136,6 +148,13 @@ const sticky={
 const comp={
 
 marginLeft:'90px'
+
+
+
+  
+}
+const para={
+
 
 
 
